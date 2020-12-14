@@ -19,14 +19,12 @@ public class PerlinGenerator
         xOrigin = origin.x;
         yOrigin = origin.y;
         areaSize = area;
-        //mapData = new Vector3[areaSize.x,areaSize.y];
         scaleFactor = scale;
     }
 
-    public void Generate(out Vector3[,] mapData)
+    public Vector3[,] Generate()
     {
-        mapData = new Vector3[areaSize.x, areaSize.y];
-        
+        Vector3[,] mapData = new Vector3[areaSize.x, areaSize.y];
         float y = 0.0f;
 
         while (y < areaSize.y)
@@ -39,12 +37,12 @@ public class PerlinGenerator
                 float xCoord = xPos / areaSize.x * scaleFactor;
                 float yCoord = yPos / areaSize.y * scaleFactor;
                 float height = Mathf.PerlinNoise(xCoord, yCoord);
-                //mapData.Add(new Vector3(xPos,height*10, yPos));
-                mapData[(int)xPos, (int)yPos] = new Vector3(xPos, height * 10, yPos);
+                mapData[(int)x, (int)y] = new Vector3(xPos, height * 10, yPos);
                 x++;
             }
             y++;
         }
 
+        return mapData;
     }
 }

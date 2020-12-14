@@ -20,9 +20,8 @@ public class BuildController : MonoBehaviour
 
     private BlockController blockController;
 
-    private bool buildMode = false;
-
-    public int hardness;
+    private bool buildMode;
+    
     
 
 

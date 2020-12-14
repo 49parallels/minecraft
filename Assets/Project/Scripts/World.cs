@@ -88,7 +88,7 @@ public class World : MonoBehaviour
     private void GeneratePerlinData()
     {
         perlinGenerator = new PerlinGenerator(transform.position, areaSize, scale);
-        perlinGenerator.Generate(out mapData);
+        mapData = perlinGenerator.Generate();
     }
 
     private void SetupWorldData()

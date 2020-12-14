@@ -14,11 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 403b0ac4d9edd429b873f37e93f9dd07, type: 2}
   areaSize: {x: 100, y: 100}
-  fieldOfView: 10
   scale: 4
   blockMaterials:
   - {fileID: 2100000, guid: 1f6887831f54d48619b95ccd9e387121, type: 2}
   - {fileID: 2100000, guid: d49a0b9215555411a891e6dc476debb7, type: 2}
   - {fileID: 2100000, guid: 586d39bce37cc45239caa067ee938471, type: 2}
   - {fileID: 2100000, guid: 59986dbca973743b885fd7fbcab4d570, type: 2}
-  maxTerrainHeight: 20

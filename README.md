@@ -1,4 +1,4 @@
-# Minecraft Grip Digital Task
+# Minecraft WIP
 
 Entry scene is in **_Project/Scenes/Mcgd_**
 
